@@ -4,14 +4,17 @@ const {cutil} = require("@ghasemkiani/commonbase/cutil");
 const {Base} = require("@ghasemkiani/commonbase/base");
 
 class MUtil extends Base {
-	geometricProgressionRatio(s, n, x1 = 2) {
-		let y = x => (x ** n - 1) / (x - 1) - s;
-		let yp = x => ((n * x ** (n - 1) * (x - 1)) - (x ** n - 1)) / (x - 1) ** 2;
-		let f = x => x - (y(x) / yp(x));
+	geometricProgressionSum(r, n) {
+		return (r ** n - 1) / (r - 1);
+	}
+	geometricProgressionRatio(s, n, r1 = 2) {
+		let y = r => (r ** n - 1) / (r - 1) - s;
+		let yp = r => ((n * r ** (n - 1) * (r - 1)) - (r ** n - 1)) / (r - 1) ** 2;
+		let f = r => r - (y(r) / yp(r));
 		
-		let x = x1;
-		while(x - (x = f(x)) > 1e-8) {}
-		return x;
+		let r = r1;
+		while(r - (r = f(r)) > 1e-8) {}
+		return r;
 	}
 }
 cutil.extend(MUtil.prototype, {
