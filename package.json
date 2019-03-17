@@ -1,0 +1,30 @@
+{
+  "name": "@ghasemkiani/math",
+  "version": "1.0.0",
+  "description": "Basic math utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ghasemkiani/math.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "math"
+  ],
+  "author": "Ghasem Kiani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ghasemkiani/math/issues"
+  },
+  "homepage": "https://gitlab.com/ghasemkiani/math#readme",
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  },
+  "dependencies": {
+    "@ghasemkiani/commonbase": "github:ghasemkiani/commonbase"
+  }
+}
