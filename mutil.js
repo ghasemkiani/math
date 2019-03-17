@@ -10,16 +10,7 @@ class MUtil extends Base {
 		let f = x => x - (y(x) / yp(x));
 		
 		let x = x1;
-		while(true) {
-			let xx = f(x);
-			console.log(xx);
-			if(Math.abs(xx - x) < 1e-8) {
-				console.log(xx);
-				break;
-			} else {
-				x = xx;
-			}
-		}
+		while(x - (x = f(x)) > 1e-8) {}
 		return x;
 	}
 }
