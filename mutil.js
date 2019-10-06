@@ -17,7 +17,7 @@ class MUtil extends Base {
 		return r;
 	}
 	log(n, b) {
-		return !b ? Math.log(n) : Math.log(n) / Math.log(b);
+		return cutil.isNil(b) ? Math.log(n) : Math.log(n) / Math.log(b);
 	}
 }
 
