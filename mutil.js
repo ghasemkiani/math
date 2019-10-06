@@ -19,6 +19,9 @@ class MUtil extends Base {
 	log(n, b) {
 		return cutil.isNil(b) ? Math.log(n) : Math.log(n) / Math.log(b);
 	}
+	exp(n, b) {
+		return cutil.isNil(b) ? Math.exp(n) : b ** n;
+	}
 }
 
 const mutil = new MUtil();
