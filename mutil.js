@@ -16,10 +16,10 @@ class MUtil extends Base {
 		while(r - (r = f(r)) > 1e-8) {}
 		return r;
 	}
+	log(n, b) {
+		return !b ? Math.log(n) : Math.log(n) / Math.log(b);
+	}
 }
-cutil.extend(MUtil.prototype, {
-	//
-});
 
 const mutil = new MUtil();
 
