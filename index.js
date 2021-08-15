@@ -1,5 +1,5 @@
 //	@ghasemkiani/math
 
-const mutil = require("@ghasemkiani/math/mutil");
+import {MUtil, mutil} from "./mutil.js";
 
-module.exports = {mutil};
+export {MUtil, mutil};

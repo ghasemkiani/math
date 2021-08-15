@@ -1,7 +1,8 @@
 {
   "name": "@ghasemkiani/math",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "Basic math utility",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -21,9 +22,6 @@
     "url": "https://gitlab.com/ghasemkiani/math/issues"
   },
   "homepage": "https://gitlab.com/ghasemkiani/math#readme",
-  "devDependencies": {
-    "mocha": "^6.0.2"
-  },
   "dependencies": {
     "@ghasemkiani/base": "github:ghasemkiani/base"
   }

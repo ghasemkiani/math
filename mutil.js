@@ -1,9 +1,9 @@
 //	@ghasemkiani/math/mutil
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {Obj: Base} = require("@ghasemkiani/base/obj");
+import {cutil} from "@ghasemkiani/base";
+import {Obj} from "@ghasemkiani/base";
 
-class MUtil extends Base {
+class MUtil extends Obj {
 	geometricProgressionSum(r, n) {
 		return (r ** n - 1) / (r - 1);
 	}
@@ -53,4 +53,4 @@ class MUtil extends Base {
 
 const mutil = new MUtil();
 
-module.exports = {MUtil, mutil};
+export {MUtil, mutil};
