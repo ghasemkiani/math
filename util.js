@@ -1,9 +1,9 @@
-//	@ghasemkiani/math/mutil
+//	@ghasemkiani/math/util
 
 import {cutil} from "@ghasemkiani/base";
 import {Obj} from "@ghasemkiani/base";
 
-class MUtil extends Obj {
+class Util extends Obj {
 	geometricProgressionSum(r, n) {
 		return (r ** n - 1) / (r - 1);
 	}
@@ -51,6 +51,6 @@ class MUtil extends Obj {
 	}
 }
 
-const mutil = new MUtil();
+const util = new Util();
 
-export {MUtil, mutil};
+export {Util, util};

@@ -1,6 +1,6 @@
 {
   "name": "@ghasemkiani/math",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Basic math utility",
   "type": "module",
   "main": "index.js",
@@ -12,8 +12,6 @@
     "url": "git+https://gitlab.com/ghasemkiani/math.git"
   },
   "keywords": [
-    "javascript",
-    "nodejs",
     "math"
   ],
   "author": "Ghasem Kiani",
