@@ -19,6 +19,9 @@ class Util extends Obj {
 	log(n, b) {
 		return cutil.isNil(b) ? Math.log(n) : Math.log(n) / Math.log(b);
 	}
+	log10(n) {
+		return this.log(n, 10);
+	}
 	exp(n, b) {
 		return cutil.isNil(b) ? Math.exp(n) : b ** n;
 	}
