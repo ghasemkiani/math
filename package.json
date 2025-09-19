@@ -1,6 +1,6 @@
 {
   "name": "@ghasemkiani/math",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Basic math utility",
   "type": "module",
   "main": "index.js",

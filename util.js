@@ -1,5 +1,3 @@
-//	@ghasemkiani/math/util
-
 import {cutil} from "@ghasemkiani/base";
 import {Obj} from "@ghasemkiani/base";
 
@@ -25,6 +23,9 @@ class Util extends Obj {
 	exp(n, b) {
 		return cutil.isNil(b) ? Math.exp(n) : b ** n;
 	}
+  toFixed(num, decimals) {
+    return (Math.trunc(num * Math.pow(10, decimals)) / Math.pow(10, decimals)).toString();
+  }
 	pearson(data) {
 		let sxy = 0;
 		let sx = 0;
